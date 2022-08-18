@@ -14,4 +14,5 @@ public interface PetRepository extends JpaRepository<Pet, Long> {
             return petOptional.get();
     }
     throw new EntityNotFoundException("Pet não encontrado");
+    }
 }

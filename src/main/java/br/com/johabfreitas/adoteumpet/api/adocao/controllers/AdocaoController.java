@@ -21,7 +21,7 @@ public class AdocaoController {
     @Autowired
     private AdocaoMapper adocaoMapper;
 
-    @PostMapping("/adocoes")
+    @PostMapping("/api/adocoes")
     @ResponseStatus(code = HttpStatus.CREATED)
     public AdocaoResponse create(@RequestBody AdocaoRequest adocaoRequest) {
         var adocao = adocaoMapper.toModel(adocaoRequest);
